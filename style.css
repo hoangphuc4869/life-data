@@ -189,9 +189,9 @@ a {
 }
 
 .vid-des {
-  font-size: 9px;
+  font-size: 10px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   overflow: hidden;
   /* max-height: 45px; */
   -webkit-box-orient: vertical;

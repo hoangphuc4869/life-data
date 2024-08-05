@@ -130,10 +130,6 @@ function show(item) {
   }
 }
 
-function updateVideoData(videoElement) {
-  videoElement.dataset.duration = videoElement.duration ?? "";
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   currentPlaying = document.querySelector(".current-playing");
   if (currentPlaying) {
