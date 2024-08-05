@@ -1,740 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="popup">
-            <div class="close">
-                <i
-                    class="fa-regular fa-circle-xmark"
-                    style="color: #cad3e3"
-                ></i>
-            </div>
-            <div class="wrapper-vid">
-                <div class="vid-name text-uppercase text-white fs-5 mb-2">
-                    tên video
-                </div>
-                <video src="" autoplay controls></video>
-            </div>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="close">
+        <i class="fa-regular fa-circle-xmark" style="color: #cad3e3"></i>
+      </div>
+      <div class="wrapper-vid">
+        <div class="vid-name text-uppercase text-white fs-5 mb-2">
+          tên video
         </div>
-        <div class="container-fluid">
-            <header class="shadow-sm">
-                <div class="menu-wrap">
-                    <div
-                        class="menu d-flex justify-content-between align-items-center py-3"
-                    >
-                        <div class="logo">
-                            <a href=""><img src="img/Vector.svg" alt="" /></a>
-                        </div>
-                        <div class="main-menu">
-                            <ul
-                                class="d-flex justify-content-between align-items-centerg gap-4"
-                            >
-                                <li><a href="" class="active">Thu Thập</a></li>
-                                <li><a href="analyze.html">Phân tích</a></li>
-                                <li><a href="deep.html">Hiểu sâu</a></li>
-                                <li><a href="faqs.html">FAQs</a></li>
-                            </ul>
-                        </div>
-                        <div class="user">
-                            <a href="">Lorem Ipsum, tên user!</a>
-                        </div>
-                        <div class="bars" onclick="addActive(this)">
-                            <label class="burger" for="burger">
-                                <input type="checkbox" id="burger" />
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <div class="menu-mobile">
-                                <ul>
-                                    <li>
-                                        <a href="" class="active">Thu Thập</a>
-                                    </li>
-                                    <li>
-                                        <a href="analyze.html">Phân tích</a>
-                                    </li>
-                                    <li><a href="deep.html">Hiểu sâu</a></li>
-                                    <li><a href="faqs.html">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <video src="" autoplay controls></video>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <header class="shadow-sm">
+        <div class="menu-wrap">
+          <div
+            class="menu d-flex justify-content-between align-items-center py-3"
+          >
+            <div class="logo">
+              <a href=""><img src="img/Vector.svg" alt="" /></a>
+            </div>
+            <div class="main-menu">
+              <ul
+                class="d-flex justify-content-between align-items-centerg gap-4"
+              >
+                <li><a href="" class="active">Thu Thập</a></li>
+                <li><a href="analyze.html">Phân tích</a></li>
+                <li>
+                  <a href="deep-overall.html">Hiểu sâu</a>
+                </li>
+                <li><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="user">
+              <a href="">Lorem Ipsum, tên user!</a>
+            </div>
+            <div class="bars" onclick="addActive(this)">
+              <label class="burger" for="burger">
+                <input type="checkbox" id="burger" />
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <div class="menu-mobile">
+                <ul>
+                  <li>
+                    <a href="" class="active">Thu Thập</a>
+                  </li>
+                  <li>
+                    <a href="analyze.html">Phân tích</a>
+                  </li>
+                  <li>
+                    <a href="deep-overall.html">Hiểu sâu</a>
+                  </li>
+                  <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="heading-line mt-4">hướng dẫn sử dụng</div>
+
+        <div class="heading">
+          <div class="how-to-use-img">
+            <div class="vid-section">
+              <div
+                class="vids vid1"
+                onclick="streamVid(this)"
+                data-name="Data về tâm trạng được thu thập như thế nào?"
+              >
+                <div class="video-wrap">
+                  <video
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                  ></video>
+
+                  <div class="vid-title">
+                    Data về tâm trạng được thu thập như thế nào?
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
                 </div>
-            </header>
+              </div>
+              <svg class="exp vid1-line">
+                <circle cx="200" cy="50" r="5" />
+                <circle cx="340" cy="170" r="5" />
+                <polyline points="200,50 240,150 340,170" />
+              </svg>
+            </div>
 
-            <main>
-                <div class="heading-line mt-4">hướng dẫn sử dụng</div>
+            <div class="vid-section">
+              <div
+                class="vids vid2"
+                onclick="streamVid(this)"
+                data-name="Khi bạn đã thu thập đủ 7 ngày data"
+              >
+                <div class="video-wrap">
+                  <video
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                  ></video>
 
-                <div class="heading">
-                    <div class="how-to-use-img">
-                        <div class="vid-section">
-                            <div
-                                class="vids vid1"
-                                onclick="streamVid(this)"
-                                data-name="Data về tâm trạng được thu thập như thế nào?"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                                    ></video>
+                  <div class="vid-title">
+                    Khi bạn đã thu thập đủ 7 ngày data
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <svg class="exp vid2-line">
+                <circle cx="200" cy="80" r="5" />
+                <circle cx="490" cy="22" r="5" />
+                <polyline points="200,80 260,26 490,22" />
+              </svg>
+            </div>
 
-                                    <div class="vid-title">
-                                        Data về tâm trạng được thu thập như thế
-                                        nào?
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid1-line">
-                                <circle cx="200" cy="50" r="5" />
-                                <circle cx="340" cy="170" r="5" />
-                                <polyline points="200,50 240,150 340,170" />
-                            </svg>
-                        </div>
+            <div class="vid-section">
+              <div
+                class="vids vid3"
+                onclick="streamVid(this)"
+                data-name="Cảnh báo nguy cơ"
+              >
+                <div class="video-wrap">
+                  <video
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                  ></video>
 
-                        <div class="vid-section">
-                            <div
-                                class="vids vid2"
-                                onclick="streamVid(this)"
-                                data-name="Khi bạn đã thu thập đủ 7 ngày data"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-                                    ></video>
-
-                                    <div class="vid-title">
-                                        Khi bạn đã thu thập đủ 7 ngày data
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid2-line">
-                                <circle cx="200" cy="80" r="5" />
-                                <circle cx="490" cy="22" r="5" />
-                                <polyline points="200,80 260,26 490,22" />
-                            </svg>
-                        </div>
-
-                        <div class="vid-section">
-                            <div
-                                class="vids vid3"
-                                onclick="streamVid(this)"
-                                data-name="Cảnh báo nguy cơ"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-                                    ></video>
-
-                                    <div class="vid-title">
-                                        Cảnh báo nguy cơ
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <svg class="exp vid3-line">
+                  <div class="vid-title">Cảnh báo nguy cơ</div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <!-- <svg class="exp vid3-line">
                                 <circle cx="200" cy="80" r="5" />
                                 <circle cx="490" cy="22" r="5" />
                                 <polyline points="200,80 260,26 490,22" />
                             </svg> -->
-                        </div>
+            </div>
 
-                        <div class="vid-section">
-                            <div
-                                class="vids vid4 text-right"
-                                onclick="streamVid(this)"
-                                data-name="Data về cảm xúc được thu thập như thế
+            <div class="vid-section">
+              <div
+                class="vids vid4 text-right"
+                onclick="streamVid(this)"
+                data-name="Data về cảm xúc được thu thập như thế
                                         nào?"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
-                                    ></video>
+              >
+                <div class="video-wrap">
+                  <video
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                  ></video>
 
-                                    <div class="vid-title">
-                                        Data về cảm xúc được thu thập như thế
-                                        nào?
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid4-line">
-                                <circle cx="595" cy="60" r="5" />
-                                <circle cx="210" cy="190" r="5" />
-                                <polyline points="595,60 260,126 210,190" />
-                            </svg>
-                        </div>
+                  <div class="vid-title">
+                    Data về cảm xúc được thu thập như thế nào?
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <svg class="exp vid4-line">
+                <circle cx="595" cy="60" r="5" />
+                <circle cx="210" cy="190" r="5" />
+                <polyline points="595,60 260,126 210,190" />
+              </svg>
+            </div>
 
-                        <div class="vid-section">
-                            <div
-                                class="vids vid5 text-right"
-                                onclick="streamVid(this)"
-                                data-name="Data về cảm xúc được thu thập như thế
+            <div class="vid-section">
+              <div
+                class="vids vid5 text-right"
+                onclick="streamVid(this)"
+                data-name="Data về cảm xúc được thu thập như thế
                                         nào?"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-                                    ></video>
+              >
+                <div class="video-wrap">
+                  <video
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                  ></video>
 
-                                    <div class="vid-title">
-                                        Data về cảm xúc được thu thập như thế
-                                        nào?
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid5-line">
-                                <circle cx="595" cy="60" r="5" />
-                                <circle cx="290" cy="135" r="5" />
-                                <polyline points="595,60 500,150 290,135" />
-                            </svg>
-                        </div>
+                  <div class="vid-title">
+                    Data về cảm xúc được thu thập như thế nào?
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <svg class="exp vid5-line">
+                <circle cx="595" cy="60" r="5" />
+                <circle cx="290" cy="135" r="5" />
+                <polyline points="595,60 500,150 290,135" />
+              </svg>
+            </div>
 
-                        <div class="vid-section">
-                            <div
-                                class="vids vid6 text-right"
-                                onclick="streamVid(this)"
-                                data-name="Keywords của ngày được thu thập như thế
+            <div class="vid-section">
+              <div
+                class="vids vid6 text-right"
+                onclick="streamVid(this)"
+                data-name="Keywords của ngày được thu thập như thế
                                         nào?"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        poster=""
-                                        src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
-                                    ></video>
+              >
+                <div class="video-wrap">
+                  <video
+                    poster=""
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                  ></video>
 
-                                    <div class="vid-title">
-                                        Keywords của ngày được thu thập như thế
-                                        nào?
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <svg class="exp vid6-line">
+                  <div class="vid-title">
+                    Keywords của ngày được thu thập như thế nào?
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <!-- <svg class="exp vid6-line">
                                 <circle cx="595" cy="60" r="5" />
                                 <circle cx="290" cy="135" r="5" />
                                 <polyline points="595,60 500,150 290,135" />
                             </svg> -->
-                        </div>
+            </div>
 
-                        <div class="front-card">Mặt trước thẻ</div>
-                        <img src="img/Group 168.png" alt="" class="w-100" />
+            <div class="front-card">Mặt trước thẻ</div>
+            <img src="img/Group 168.png" alt="" class="w-100" />
+          </div>
+
+          <div class="videos-mobile position-relative d-block d-lg-none mb-4">
+            <div class="text-center fs-6 mt-5 mb-3 fw-bolder text-uppercase">
+              Lorem ipsum
+            </div>
+            <div class="swiper swiper-vids">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <video
+                    src="img/SampleVideo_1280x720_1mb.mp4"
+                    controls
+                    class="w-100"
+                  ></video>
+
+                  <div class="vid-title fs-6 fw-bold mb-1 mt-3">
+                    1. VIDEO TITLE
+                  </div>
+                  <div class="vid-des">
+                    Để hiểu thêm về cách não bộ vận hành khi thực hành... mời
+                    bạn xem thêm...
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <video
+                    src="img/SampleVideo_1280x720_1mb.mp4"
+                    controls
+                    class="w-100"
+                  ></video>
+
+                  <div class="vid-title fs-6 fw-bold mb-1 mt-3">
+                    2. VIDEO TITLE
+                  </div>
+                  <div class="vid-des">
+                    Để hiểu thêm về cách não bộ vận hành khi thực hành... mời
+                    bạn xem thêm...
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination vids-pag"></div>
+            </div>
+            <div class="swiper-button-next gal-next">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="swiper-button-prev gal-prev">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="heading mt-5 behind">
+          <div class="how-to-use-img">
+            <div class="vid-section">
+              <div
+                class="vids vid2"
+                onclick="streamVid(this)"
+                data-name="Cách thu thập data 3 điều tốt"
+              >
+                <div class="video-wrap">
+                  <video src="img/SampleVideo_1280x720_1mb.mp4"></video>
+
+                  <div class="vid-title">Cách thu thập data 3 điều tốt</div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <svg class="exp vid2-line">
+                <circle cx="100" cy="230" r="5" />
+                <circle cx="440" cy="150" r="5" />
+                <polyline points="100,230 100,150 440,150" />
+              </svg>
+            </div>
+
+            <div class="vid-section">
+              <div
+                class="vids vid4 text-right"
+                onclick="streamVid(this)"
+                data-name="Cách thu thập data 1 điều cần cải thiện"
+              >
+                <div class="video-wrap">
+                  <video src="img/SampleVideo_1280x720_1mb.mp4"></video>
+
+                  <div class="vid-title">
+                    Cách thu thập data 1 điều cần cải thiện
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <svg class="exp vid4-line">
+                <circle cx="595" cy="60" r="5" />
+                <circle cx="310" cy="150" r="5" />
+                <polyline points="595,60 310,60 310,150" />
+              </svg>
+            </div>
+
+            <div class="vid-section">
+              <div
+                class="vids vid6 text-right"
+                onclick="streamVid(this)"
+                data-name="Cách ghi 1 lời nhắn nhủ tích cực đến
+                                        chính mình"
+              >
+                <div class="video-wrap">
+                  <video src="img/SampleVideo_1280x720_1mb.mp4"></video>
+
+                  <div class="vid-title">
+                    Cách ghi 1 lời nhắn nhủ tích cực đến chính mình
+                  </div>
+                  <div class="vid-des">
+                    Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc không
+                    vui xuất hiện nghĩa là thế nào?
+                  </div>
+                  <div class="more">
+                    <a href="#">Hiểu sâu</a>
+                  </div>
+                </div>
+              </div>
+              <svg class="exp vid6-line">
+                <circle cx="700" cy="230" r="5" />
+                <circle cx="350" cy="150" r="5" />
+                <polyline points="700,230 700,150 350,150" />
+              </svg>
+            </div>
+
+            <div class="front-card">Mặt sau thẻ</div>
+            <img src="img/image 8.png" alt="" class="w-100" />
+
+            <div class="videos-mobile position-relative d-block d-lg-none mb-4">
+              <div class="text-center fs-6 mt-5 mb-3 fw-bolder text-uppercase">
+                Lorem ipsum
+              </div>
+              <div class="swiper swiper-vids">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <video
+                      src="img/SampleVideo_1280x720_1mb.mp4"
+                      controls
+                      class="w-100"
+                    ></video>
+
+                    <div class="vid-title fs-6 fw-bold mb-1 mt-3">
+                      1. VIDEO TITLE
                     </div>
+                    <div class="vid-des">
+                      Để hiểu thêm về cách não bộ vận hành khi thực hành... mời
+                      bạn xem thêm...
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <video
+                      src="img/SampleVideo_1280x720_1mb.mp4"
+                      controls
+                      class="w-100"
+                    ></video>
 
-                    <div
-                        class="videos-mobile position-relative d-block d-lg-none mb-4"
-                    >
-                        <div
-                            class="text-center fs-6 mt-5 mb-3 fw-bolder text-uppercase"
-                        >
-                            Lorem ipsum
-                        </div>
-                        <div class="swiper swiper-vids">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <video
-                                        src="img/SampleVideo_1280x720_1mb.mp4"
-                                        controls
-                                        class="w-100"
-                                    ></video>
+                    <div class="vid-title fs-6 fw-bold mb-1 mt-3">
+                      2. VIDEO TITLE
+                    </div>
+                    <div class="vid-des">
+                      Để hiểu thêm về cách não bộ vận hành khi thực hành... mời
+                      bạn xem thêm...
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination vids-pag"></div>
+              </div>
+              <div class="swiper-button-next gal-next">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="swiper-button-prev gal-prev">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                                    <div
-                                        class="vid-title fs-6 fw-bold mb-1 mt-3"
-                                    >
-                                        1. VIDEO TITLE
-                                    </div>
-                                    <div class="vid-des">
-                                        Để hiểu thêm về cách não bộ vận hành khi
-                                        thực hành... mời bạn xem thêm...
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <video
-                                        src="img/SampleVideo_1280x720_1mb.mp4"
-                                        controls
-                                        class="w-100"
-                                    ></video>
+        <div class="heading my-5 stretch">
+          <div class="stretch-title">MẶT TRƯỚC DẢI TRẢI</div>
 
-                                    <div
-                                        class="vid-title fs-6 fw-bold mb-1 mt-3"
-                                    >
-                                        2. VIDEO TITLE
-                                    </div>
-                                    <div class="vid-des">
-                                        Để hiểu thêm về cách não bộ vận hành khi
-                                        thực hành... mời bạn xem thêm...
-                                    </div>
-                                </div>
+          <div class="row align-items-center">
+            <div class="videos-mobile position-relative d-block d-lg-none mb-4">
+              <div class="swiper swiper-stretch">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/mockup 1.png" alt="" class="w-100" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mockup 1.png" alt="" class="w-100" />
+                  </div>
+                </div>
+              </div>
+              <div class="stretch-next">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+              <div class="stretch-prev">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+            </div>
+
+            <div class="col-lg-8 d-none d-lg-block">
+              <div class="">
+                <img src="img/mockup 1.png" alt="" class="w-100" />
+              </div>
+              <div class="">
+                <img src="img/mockup 1.png" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="vid-section">
+                <div
+                  class="vids vid4 text-right"
+                  onclick="streamVid(this)"
+                  data-name="Điều gì kích hoạt cảm xúc?"
+                  style="position: unset; transform: unset; width: 100%"
+                >
+                  <div class="video-wrap">
+                    <video src="img/SampleVideo_1280x720_1mb.mp4"></video>
+
+                    <div class="vid-title">Điều gì kích hoạt cảm xúc?</div>
+                    <div class="vid-des">
+                      Khi điểm tâm trạng là dương nhưng vẫn có những cảm xúc
+                      không vui xuất hiện nghĩa là thế nào?
+                    </div>
+                    <div class="more">
+                      <a href="#">Hiểu sâu</a>
+                    </div>
+                  </div>
+                </div>
+                <svg class="exp vid6-line l1">
+                  <circle class="c1" cx="70%" cy="50%" r="5" />
+                  <circle class="c2" cx="40%" cy="20%" r="5" />
+                  <polyline points="" />
+                </svg>
+                <svg class="exp vid7-line l2">
+                  <circle class="c3" cx="70%" cy="50%" r="5" />
+                  <circle class="c4" cx="40%" cy="90%" r="5" />
+
+                  <polyline points="" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 d-none d-lg-block">
+              <div class="gal position-relative">
+                <div class="swiper swiper-gallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next gal-next">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="swiper-button-prev gal-prev">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+              </div>
+
+              <div class="note">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco"
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="register-form">
+                      <div class="register-logo">
+                        <img src="img/chạm 2@4x-8 2.png" alt="" />
+                      </div>
+                      <div class="gal position-relative w-100 d-md-none">
+                        <div class="swiper swiper-gallery">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img
+                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
+                                alt=""
+                                class="w-100"
+                              />
                             </div>
-                            <div class="swiper-pagination vids-pag"></div>
+                            <div class="swiper-slide">
+                              <img
+                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
+                                alt=""
+                                class="w-100"
+                              />
+                            </div>
+                            <div class="swiper-slide">
+                              <img
+                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
+                                alt=""
+                                class="w-100"
+                              />
+                            </div>
+                          </div>
                         </div>
                         <div class="swiper-button-next gal-next">
-                            <i class="fa-solid fa-angle-right"></i>
+                          <i class="fa-solid fa-angle-right"></i>
                         </div>
                         <div class="swiper-button-prev gal-prev">
-                            <i class="fa-solid fa-angle-left"></i>
+                          <i class="fa-solid fa-angle-left"></i>
                         </div>
-                    </div>
-                </div>
+                      </div>
 
-                <div class="heading mt-5 behind">
-                    <div class="how-to-use-img">
-                        <div class="vid-section">
-                            <div
-                                class="vids vid2"
-                                onclick="streamVid(this)"
-                                data-name="Cách thu thập data 3 điều tốt"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="img/SampleVideo_1280x720_1mb.mp4"
-                                    ></video>
+                      <div class="register-title mt-3">
+                        ĐĂNG KÝ THAM GIA <br />
+                        WORKSHOP VÒNG TRÒN CHẠM
+                      </div>
 
-                                    <div class="vid-title">
-                                        Cách thu thập data 3 điều tốt
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid2-line">
-                                <circle cx="100" cy="230" r="5" />
-                                <circle cx="440" cy="150" r="5" />
-                                <polyline points="100,230 100,150 440,150" />
-                            </svg>
-                        </div>
-
-                        <div class="vid-section">
-                            <div
-                                class="vids vid4 text-right"
-                                onclick="streamVid(this)"
-                                data-name="Cách thu thập data 1 điều cần cải thiện"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="img/SampleVideo_1280x720_1mb.mp4"
-                                    ></video>
-
-                                    <div class="vid-title">
-                                        Cách thu thập data 1 điều cần cải thiện
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid4-line">
-                                <circle cx="595" cy="60" r="5" />
-                                <circle cx="310" cy="150" r="5" />
-                                <polyline points="595,60 310,60 310,150" />
-                            </svg>
-                        </div>
-
-                        <div class="vid-section">
-                            <div
-                                class="vids vid6 text-right"
-                                onclick="streamVid(this)"
-                                data-name="Cách ghi 1 lời nhắn nhủ tích cực đến
-                                        chính mình"
-                            >
-                                <div class="video-wrap">
-                                    <video
-                                        src="img/SampleVideo_1280x720_1mb.mp4"
-                                    ></video>
-
-                                    <div class="vid-title">
-                                        Cách ghi 1 lời nhắn nhủ tích cực đến
-                                        chính mình
-                                    </div>
-                                    <div class="vid-des">
-                                        Khi điểm tâm trạng là dương nhưng vẫn có
-                                        những cảm xúc không vui xuất hiện nghĩa
-                                        là thế nào?
-                                    </div>
-                                    <div class="more">
-                                        <a href="#">Hiểu sâu</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <svg class="exp vid6-line">
-                                <circle cx="700" cy="230" r="5" />
-                                <circle cx="350" cy="150" r="5" />
-                                <polyline points="700,230 700,150 350,150" />
-                            </svg>
-                        </div>
-
-                        <div class="front-card">Mặt sau thẻ</div>
-                        <img src="img/image 8.png" alt="" class="w-100" />
-
-                        <div
-                            class="videos-mobile position-relative d-block d-lg-none mb-4"
+                      <div class="form-regis">
+                        <select
+                          name="date-to-join"
+                          id="date-to-join"
+                          class="form-select"
                         >
-                            <div
-                                class="text-center fs-6 mt-5 mb-3 fw-bolder text-uppercase"
-                            >
-                                Lorem ipsum
-                            </div>
-                            <div class="swiper swiper-vids">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <video
-                                            src="img/SampleVideo_1280x720_1mb.mp4"
-                                            controls
-                                            class="w-100"
-                                        ></video>
+                          <option value="" selected disabled>
+                            Chọn buổi tham gia
+                          </option>
+                          <option value="">
+                            Buổi 1: 00:00 - 00:00 (thứ)ngày/tháng/năm
+                          </option>
+                          <option value="">
+                            Buổi 2: 00:00 - 00:00 (thứ)ngày/tháng/năm
+                          </option>
+                          <option value="">
+                            Buổi 3: 00:00 - 00:00 (thứ)ngày/tháng/năm
+                          </option>
+                        </select>
 
-                                        <div
-                                            class="vid-title fs-6 fw-bold mb-1 mt-3"
-                                        >
-                                            1. VIDEO TITLE
-                                        </div>
-                                        <div class="vid-des">
-                                            Để hiểu thêm về cách não bộ vận hành
-                                            khi thực hành... mời bạn xem thêm...
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <video
-                                            src="img/SampleVideo_1280x720_1mb.mp4"
-                                            controls
-                                            class="w-100"
-                                        ></video>
-
-                                        <div
-                                            class="vid-title fs-6 fw-bold mb-1 mt-3"
-                                        >
-                                            2. VIDEO TITLE
-                                        </div>
-                                        <div class="vid-des">
-                                            Để hiểu thêm về cách não bộ vận hành
-                                            khi thực hành... mời bạn xem thêm...
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination vids-pag"></div>
-                            </div>
-                            <div class="swiper-button-next gal-next">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </div>
-                            <div class="swiper-button-prev gal-prev">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="heading mt-5 stretch">
-                    <div class="front-card">DẢI TRẢI bộ thẻ</div>
-
-                    <div class="vid-section">
-                        <div
-                            class="vids vid6 text-right"
-                            onclick="streamVid(this)"
-                            data-name="Điều gì kích hoạt cảm xúc?"
+                        <button
+                          type="button"
+                          class="form-control btn btn-success mt-3 text-uppercase p-2 submit-btn"
+                          style="color: #000"
+                          onclick="submit()"
                         >
-                            <div class="video-wrap">
-                                <video
-                                    src="img/SampleVideo_1280x720_1mb.mp4"
-                                ></video>
-
-                                <div class="vid-title">
-                                    Điều gì kích hoạt cảm xúc?
-                                </div>
-                                <div class="vid-des">
-                                    Khi điểm tâm trạng là dương nhưng vẫn có
-                                    những cảm xúc không vui xuất hiện nghĩa là
-                                    thế nào?
-                                </div>
-                                <div class="more">
-                                    <a href="#">Hiểu sâu</a>
-                                </div>
-                            </div>
-                        </div>
-                        <svg class="exp vid6-line">
-                            <circle cx="710" cy="140" r="5" />
-                            <circle cx="250" cy="190" r="5" />
-                            <polyline points="710,140 650,170 250,190" />
-                        </svg>
+                          Đăng ký tại đây
+                        </button>
+                      </div>
                     </div>
-
-                    <div class="how-to-use-img">
-                        <img src="img/mockup 1.png" alt="" class="w-100" />
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="register-form">
+                      <div class="logo2">
+                        <img src="img/chạm 2@4x-8 2.png" alt="" />
+                      </div>
+                      <div class="register-logo">
+                        <img src="img/Group 127.png" alt="" />
+                      </div>
+                      <div class="register-title mt-1">
+                        BẠN ĐÃ ĐĂNG KÝ THAM GIA <br />
+                        WORKSHOP THÀNH CÔNG <br />
+                        <span>
+                          Bạn nhớ check mail để xác nhận tham gia nhé!</span
+                        >
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </main>
-        </div>
-        <footer>
-            <div class="footer-wrap">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-7 d-none d-lg-block">
-                            <div class="gal position-relative">
-                                <div class="swiper swiper-gallery">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img
-                                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
-                                                alt=""
-                                                class="w-100"
-                                            />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img
-                                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
-                                                alt=""
-                                                class="w-100"
-                                            />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img
-                                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
-                                                alt=""
-                                                class="w-100"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next gal-next">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                </div>
-                                <div class="swiper-button-prev gal-prev">
-                                    <i class="fa-solid fa-angle-left"></i>
-                                </div>
-                            </div>
-
-                            <div class="note">
-                                "Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco"
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <div class="register-form">
-                                            <div class="register-logo">
-                                                <img
-                                                    src="img/chạm 2@4x-8 2.png"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div
-                                                class="gal position-relative w-100 d-md-none"
-                                            >
-                                                <div
-                                                    class="swiper swiper-gallery"
-                                                >
-                                                    <div class="swiper-wrapper">
-                                                        <div
-                                                            class="swiper-slide"
-                                                        >
-                                                            <img
-                                                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
-                                                                alt=""
-                                                                class="w-100"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            class="swiper-slide"
-                                                        >
-                                                            <img
-                                                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
-                                                                alt=""
-                                                                class="w-100"
-                                                            />
-                                                        </div>
-                                                        <div
-                                                            class="swiper-slide"
-                                                        >
-                                                            <img
-                                                                src="img/452312483_2115670802159584_8254434017507757962_n 1.png"
-                                                                alt=""
-                                                                class="w-100"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="swiper-button-next gal-next"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-angle-right"
-                                                    ></i>
-                                                </div>
-                                                <div
-                                                    class="swiper-button-prev gal-prev"
-                                                >
-                                                    <i
-                                                        class="fa-solid fa-angle-left"
-                                                    ></i>
-                                                </div>
-                                            </div>
-
-                                            <div class="register-title mt-3">
-                                                ĐĂNG KÝ THAM GIA <br />
-                                                WORKSHOP VÒNG TRÒN CHẠM
-                                            </div>
-
-                                            <div class="form-regis">
-                                                <select
-                                                    name="date-to-join"
-                                                    id="date-to-join"
-                                                    class="form-select"
-                                                >
-                                                    <option
-                                                        value=""
-                                                        selected
-                                                        disabled
-                                                    >
-                                                        Chọn buổi tham gia
-                                                    </option>
-                                                    <option value="">
-                                                        Buổi 1: 00:00 - 00:00
-                                                        (thứ)ngày/tháng/năm
-                                                    </option>
-                                                    <option value="">
-                                                        Buổi 2: 00:00 - 00:00
-                                                        (thứ)ngày/tháng/năm
-                                                    </option>
-                                                    <option value="">
-                                                        Buổi 3: 00:00 - 00:00
-                                                        (thứ)ngày/tháng/năm
-                                                    </option>
-                                                </select>
-
-                                                <button
-                                                    type="button"
-                                                    class="form-control btn btn-success mt-3 text-uppercase p-2 submit-btn"
-                                                    style="color: #000"
-                                                    onclick="submit()"
-                                                >
-                                                    Đăng ký tại đây
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <div class="register-form">
-                                            <div class="logo2">
-                                                <img
-                                                    src="img/chạm 2@4x-8 2.png"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div class="register-logo">
-                                                <img
-                                                    src="img/Group 127.png"
-                                                    alt=""
-                                                />
-                                            </div>
-                                            <div class="register-title mt-1">
-                                                BẠN ĐÃ ĐĂNG KÝ THAM GIA <br />
-                                                WORKSHOP THÀNH CÔNG <br />
-                                                <span>
-                                                    Bạn nhớ check mail để xác
-                                                    nhận tham gia nhé!</span
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://kit.fontawesome.com/9e8a8858d4.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="app.js"></script>
-    </body>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9e8a8858d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>

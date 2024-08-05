@@ -52,7 +52,7 @@
               >
                 <li><a href="" class="active">Thu Thập</a></li>
                 <li><a href="analyze.html">Phân tích</a></li>
-                <li><a href="deep-overall.html">Hiểu sâu</a></li>
+                <li><a href="deep.html">Hiểu sâu</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
               </ul>
             </div>
@@ -71,8 +71,12 @@
                   <li>
                     <a href="" class="active">Thu Thập</a>
                   </li>
-                  <li><a href="analyze.html">Phân tích</a></li>
-                  <li><a href="deep-overall.html">Hiểu sâu</a></li>
+                  <li>
+                    <a href="analyze.html">Phân tích</a>
+                  </li>
+                  <li>
+                    <a href="deep-overall.html">Hiểu sâu</a>
+                  </li>
                   <li><a href="faqs.html">FAQs</a></li>
                 </ul>
               </div>
@@ -82,7 +86,7 @@
       </header>
 
       <main>
-        <div class="heading-line mt-4">CÁC CÂU HỎI THƯỜNG GẶP</div>
+        <div class="heading-line mt-4">HIỂU SÂU</div>
 
         <div class="search-bar-wrap mt-3 my-4">
           <input
@@ -97,96 +101,134 @@
           </div>
         </div>
 
-        <div class="faqs-wrap container">
-          <div class="faq">
-            <div class="topic">CHỦ ĐỀ 4</div>
-            <div class="question">"Lorem ipsum dolor sit amet, consectetur</div>
-            <div class="hashtag">#HASHTAG #HASHTAG</div>
-            <div class="show-answer" onclick="show(this)">
-              <span></span>
-              <span class="out"></span>
-            </div>
-            <div class="answer">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco
-            </div>
-          </div>
+        <div class="deep-videos px-lg-5 my-5">
+          <div class="row">
+            <div class="col-lg-4 mb-5">
+              <div class="related-wrap">
+                <div class="v-wrap position-relative">
+                  <div class="tag new">MỚI!</div>
+                  <a href="deep.html" draggable="false" class="d-flex"
+                    ><video
+                      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                      class="w-100"
+                      oncanplay="updateVideoData(this)"
+                      data-duration=""
+                      muted
+                      data-playing="0"
+                      style="height: 250px; border-radius: 10px"
+                    ></video
+                  ></a>
+                  <div class="v-progress"></div>
+                </div>
 
-          <div class="faq">
-            <div class="topic">CHỦ ĐỀ 3</div>
-            <div class="question">"Lorem ipsum dolor sit amet, consectetur</div>
-            <div class="hashtag">#HASHTAG #HASHTAG</div>
-            <div class="show-answer" onclick="show(this)">
-              <span></span>
-              <span class="out"></span>
-            </div>
-            <div class="answer">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor
-              sit amet, consectetur
-            </div>
-          </div>
-
-          <div class="faq">
-            <div class="topic" data-color>CHỦ ĐỀ 1</div>
-            <div class="question">"Lorem ipsum dolor sit amet, consectetur</div>
-            <div class="hashtag">#HASHTAG #HASHTAG</div>
-            <div class="show-answer" onclick="show(this)">
-              <span></span>
-              <span class="out"></span>
-            </div>
-            <div class="answer">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor
-              sit amet, consectetur
-            </div>
-          </div>
-          <div class="faq">
-            <div class="topic">CHỦ ĐỀ 2</div>
-            <div class="question">"Lorem ipsum dolor sit amet, consectetur</div>
-            <div class="hashtag">#HASHTAG #HASHTAG</div>
-            <div class="show-answer" onclick="show(this)">
-              <span></span>
-              <span class="out"></span>
-            </div>
-            <div class="answer">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor
-              sit amet, consectetur
-            </div>
-          </div>
-        </div>
-
-        <div class="question-sending container">
-          <div class="heading-line mt-5">BẠN CÓ CÂU HỎI KHÁC?</div>
-          <div class="another-question my-4">
-            <form action="">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form-control p-3"
-                placeholder="NHẬP CÂU HỎI..."
-              />
-              <div
-                class="submit-btn mt-3 d-flex justify-content-end align-items-center"
-              >
-                <button type="submit" class="">Gửi câu hỏi</button>
+                <div class="my-2">
+                  <div class="vid-title fs-5 fw-bold deep">
+                    <a href="deep.html">Lorem Ipsum</a>
+                  </div>
+                  <div class="hashtag">#hashtag</div>
+                </div>
+                <div class="vid-des deep" style="color: #000">
+                  Để hiểu thêm về cách não bộ vận hành khi thực hành... mời bạn
+                  xem thêm...
+                </div>
               </div>
-            </form>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <div class="related-wrap">
+                <div class="v-wrap position-relative">
+                  <div class="tag done">ĐÃ XEM</div>
+                  <a href="de" draggable="false" class="d-flex"
+                    ><video
+                      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                      class="w-100"
+                      oncanplay="updateVideoData(this)"
+                      data-duration=""
+                      muted
+                      data-playing="15"
+                      style="height: 250px; border-radius: 10px"
+                    ></video
+                  ></a>
+                  <div class="v-progress"></div>
+                </div>
+
+                <div class="my-2">
+                  <div class="vid-title fs-5 fw-bold deep">
+                    <a href="deep.html">Lorem Ipsum</a>
+                  </div>
+                  <div class="hashtag">#hashtag</div>
+                </div>
+                <div class="vid-des deep" style="color: #000">
+                  Để hiểu thêm về cách não bộ vận hành khi thực hành... mời bạn
+                  xem thêm...
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <div class="related-wrap">
+                <div class="v-wrap position-relative">
+                  <div class="tag continue">XEM TIẾP</div>
+                  <a href="deep.html" draggable="false" class="d-flex"
+                    ><video
+                      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                      class="w-100"
+                      oncanplay="updateVideoData(this)"
+                      data-duration=""
+                      muted
+                      data-playing="6"
+                      style="height: 250px; border-radius: 10px"
+                    ></video
+                  ></a>
+                  <div class="v-progress"></div>
+                </div>
+
+                <div class="my-2">
+                  <div class="vid-title fs-5 fw-bold deep">
+                    <a href="deep.html">Lorem Ipsum</a>
+                  </div>
+                  <div class="hashtag">#hashtag</div>
+                </div>
+                <div class="vid-des deep" style="color: #000">
+                  Để hiểu thêm về cách não bộ vận hành khi thực hành... mời bạn
+                  xem thêm...
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-5">
+              <div class="related-wrap">
+                <div class="v-wrap position-relative">
+                  <div class="tag done">ĐÃ XEM</div>
+                  <a href="deep.html" draggable="false" class="d-flex"
+                    ><video
+                      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                      class="w-100"
+                      oncanplay="updateVideoData(this)"
+                      data-duration=""
+                      muted
+                      data-playing="15"
+                      style="height: 250px; border-radius: 10px"
+                    ></video
+                  ></a>
+                  <div class="v-progress"></div>
+                </div>
+
+                <div class="my-2">
+                  <div class="vid-title fs-5 fw-bold deep">
+                    <a href="deep.html">Lorem Ipsum</a>
+                  </div>
+                  <div class="hashtag">#hashtag</div>
+                </div>
+                <div class="vid-des deep" style="color: #000">
+                  Để hiểu thêm về cách não bộ vận hành khi thực hành... mời bạn
+                  xem thêm...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="more-videos d-flex justify-content-center align-items-center"
+          >
+            <button class="col-lg-4">XEM THÊM</button>
           </div>
         </div>
       </main>
